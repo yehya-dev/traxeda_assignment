@@ -57,9 +57,9 @@ DATABASES = {
 > django-crispy-forms==1.12.0
 
 ### Screenshots
-<img src="./screenshots/homepage.png" alt="homepage" width="200"/>
-<img src="./screenshots/login.png" alt="login" width="200">
-<img src="./screenshots/register.png" alt="register" width="200">
-<img src="./screenshots/posts.png" alt="posts" width="200">
-<img src="./screenshots/admin.png" alt="admin" width="200">
+<img src="./screenshots/homepage.png" alt="homepage" width="500"/>
+<img src="./screenshots/login.png" alt="login" width="500">
+<img src="./screenshots/register.png" alt="register" width="500">
+<img src="./screenshots/posts.png" alt="posts" width="500">
+<img src="./screenshots/admin.png" alt="admin" width="500">
 
