@@ -6,9 +6,11 @@
 ```
 - clone the repo
 - create virtualenv and activate
+> cd traxeda_assignment
 > pip install django django-crispy-forms
 > python manage.py migrate
 > python manage.py migrate --database db_products
+> python manage.py createsuperuser (provide details)
 > python manage.py runserver
 ```
 
