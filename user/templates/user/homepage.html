@@ -1,0 +1,30 @@
+{% extends 'root.html' %}
+{% block content %}
+{% if message %}
+<ul class="border bg-gray-200 font-bold p-3">
+  {% for message in messages %}
+  <li class="text-gray-600">{{message}}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+<section class="p-4">
+<div class='bg-gray-200 p-3 shadow-md font-semibold mb-3'>
+<h3 class="font-bold mb-3 text-gray-600 text-2xl">Authentication</h3>
+{% if not user.is_authenticated %}
+<a class="font-mono text-blue-500" href="{% url 'user:register' %}">Registration</a><br>
+<a class="font-mono text-blue-500" href="{% url 'user:login' %}">Login</a>
+{% else %}
+<p>Current User - {{user.username}} | <a class="font-mono text-blue-500" href="{% url 'user:logout' %}">Logout</a></p>
+{% endif %}
+</div>
+<div class='bg-gray-200 p-3 shadow-md font-semibold'>
+<h3 class="font-bold mb-3 text-gray-600 text-2xl">Actions</h3>
+{% if user.is_authenticated %}
+<a class="font-mono text-blue-500" href="{% url 'user:createpost' %}">Create Post</a><br>
+{% endif %}
+<a class="font-mono text-blue-500" href="{% url 'user:viewposts' %}">View Posts</a>
+</div>
+
+</section>
+
+{% endblock content %}

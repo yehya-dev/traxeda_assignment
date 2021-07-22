@@ -1,0 +1,20 @@
+{% extends 'root.html' %}
+{% block content %}
+<section class="p-3 space-y-3 w-1/2">
+<h3 class="font-bold mb-3 text-gray-600 text-2xl">Posts</h3>
+{% for post in object_list %}
+<div class="bg-gray-200 shadow-md">
+<div class="p-2 space-y-1">
+<p class="font-bold text-sm text-blue-600">{{post.created_by}}</p>
+<p class="px-2">{{post.text}}</p>
+</div>
+<div class="bg-gray-300 p-2">
+    <small><span class="font-semibold">Created :</span>{{post.created_at}}</small>
+    |
+    <small><span class="font-semibold" >Updated :</span>{{post.updated_at}}</small>
+</div>
+</div>
+{% endfor %}
+</section>
+{% endblock content %}
+
