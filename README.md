@@ -1,5 +1,5 @@
 # Traxeda Assignment
-*Traxeda intership shortlisting process*<br>
+*Traxeda internship shortlisting process*<br>
 **Django Application (Python 3.8)**
 
 ### How to run
